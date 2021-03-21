@@ -12,17 +12,16 @@ const createBingoNumbers = () => {
 let BINGO_NUMBERS_ARRAY = createBingoNumbers()
 
 // Generate a caller
-function* callANumber () {
+function* callANumber() {
   if (BINGO_NUMBERS_ARRAY.length > 0) {
     BINGO_NUMBERS_ARRAY.sort(() => Math.random() - 0.5)
 
     yield BINGO_NUMBERS_ARRAY.splice(0, 1)[0]
-  } else
-    throw new Error('All the numbers were called')
+  } else throw new Error('All the numbers were called')
 }
 
 // Create a function to reset the array in case we need it
-const resetBingoNumbers = () => BINGO_NUMBERS_ARRAY = createBingoNumbers()
+const resetBingoNumbers = () => (BINGO_NUMBERS_ARRAY = createBingoNumbers())
 
 const getCurrentBingoArray = () => BINGO_NUMBERS_ARRAY
 

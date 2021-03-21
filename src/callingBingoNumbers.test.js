@@ -19,8 +19,9 @@ test('Every number is called once', () => {
 
 // Testing no more numbers available
 test('All the numbers were called', () => {
-  expect(() => callANumber().next().value)
-    .toThrow('All the numbers were called')
+  expect(() => callANumber().next().value).toThrow(
+    'All the numbers were called'
+  )
 })
 
 // Testing we can re populate the array of numbers

@@ -28,11 +28,10 @@ There are three sections to test separately, by running the followings commands:
   $ yarn generatingBingoCards
   ```
 
-To test all the implementation please run:
-
-```console
-$ yarn test
-```
+- To test Checking Bingo Cards section:
+  ```
+  $ yarn checkingBingoCards
+  ```
 
 ## Author
 -   **Anthony Luzquiños** - _Initial Work_ - _Documentation_ - [AnthonyLzq](https://github.com/AnthonyLzq).
