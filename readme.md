@@ -18,10 +18,15 @@ $ yarn
 
 There are three sections to test separately, by running the followings commands:
 
-To test Calling Bingo Numbers section:
-```
-$ yarn callingBingoNumbers
-```
+- To test Calling Bingo Numbers section:
+  ```
+  $ yarn callingBingoNumbers
+  ```
+
+- To test Generating Bingo Cards section:
+  ```
+  $ yarn generatingBingoCards
+  ```
 
 To test all the implementation please run:
 
